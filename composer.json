@@ -13,6 +13,7 @@
     ],
     "require": {
         "php": "^7.2.13",
+        "antidot-fw/cli": "dev-master",
         "psr/container": "^1.0.0",
         "dasprid/container-interop-doctrine": "^1.1.0"
     },
