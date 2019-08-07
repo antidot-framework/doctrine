@@ -6,12 +6,23 @@ namespace Antidot\Persistence\Doctrine\Container\Config;
 
 use Antidot\Cli\Application\Console;
 use Antidot\Persistence\Doctrine\Container\AntidotCliDoctrineDelegatorFactory;
-use Antidot\Persistence\Doctrine\Container\DoctrineCliHelperSetFactory;
+use ContainerInteropDoctrine\ConnectionFactory;
 use ContainerInteropDoctrine\EntityManagerFactory;
+use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\PDOSqlite\Driver;
 use Doctrine\DBAL\Tools\Console\Command\ImportCommand;
 use Doctrine\DBAL\Tools\Console\Command\ReservedWordsCommand;
 use Doctrine\DBAL\Tools\Console\Command\RunSqlCommand;
+use Doctrine\Migrations\Tools\Console\Command\DiffCommand;
+use Doctrine\Migrations\Tools\Console\Command\DumpSchemaCommand;
+use Doctrine\Migrations\Tools\Console\Command\ExecuteCommand;
+use Doctrine\Migrations\Tools\Console\Command\GenerateCommand;
+use Doctrine\Migrations\Tools\Console\Command\LatestCommand;
+use Doctrine\Migrations\Tools\Console\Command\MigrateCommand;
+use Doctrine\Migrations\Tools\Console\Command\RollupCommand;
+use Doctrine\Migrations\Tools\Console\Command\StatusCommand;
+use Doctrine\Migrations\Tools\Console\Command\UpToDateCommand;
+use Doctrine\Migrations\Tools\Console\Command\VersionCommand;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Mapping\Driver\SimplifiedYamlDriver;
 use Doctrine\ORM\Tools\Console\Command\ClearCache\CollectionRegionCommand;
@@ -42,9 +53,11 @@ class ConfigProvider
             'dependencies' => [
                 'factories' => [
                     'doctrine.entity_manager.orm_default' => EntityManagerFactory::class,
+                    'doctrine.connection.orm_default' => [ConnectionFactory::class, 'orm_default'],
                 ],
                 'aliases' => [
                     EntityManagerInterface::class => 'doctrine.entity_manager.orm_default',
+                    Connection::class => 'doctrine.connection.orm_default',
                 ],
             ],
             'console' => [
@@ -74,6 +87,16 @@ class ConfigProvider
                     'orm:validate-schema' => ValidateSchemaCommand::class,
                     'orm:info' => InfoCommand::class,
                     'orm:mapping:describe' => MappingDescribeCommand::class,
+                    'migrations:dump-schema' => DumpSchemaCommand::class,
+                    'migrations:execute' => ExecuteCommand::class,
+                    'migrations:generate' => GenerateCommand::class,
+                    'migrations:latest' => LatestCommand::class,
+                    'migrations:migrate' => MigrateCommand::class,
+                    'migrations:rollup' => RollupCommand::class,
+                    'migrations:status' => StatusCommand::class,
+                    'migrations:version' => VersionCommand::class,
+                    'migrations:up-to-date' => UpToDateCommand::class,
+                    'migrations:diff' => DiffCommand::class,
                 ],
                 'dependencies' => [
                     'invokables' => [
@@ -102,6 +125,16 @@ class ConfigProvider
                         ValidateSchemaCommand::class => ValidateSchemaCommand::class,
                         InfoCommand::class => InfoCommand::class,
                         MappingDescribeCommand::class => MappingDescribeCommand::class,
+                        DumpSchemaCommand::class => DumpSchemaCommand::class,
+                        ExecuteCommand::class => ExecuteCommand::class,
+                        GenerateCommand::class => GenerateCommand::class,
+                        LatestCommand::class => LatestCommand::class,
+                        MigrateCommand::class => MigrateCommand::class,
+                        RollupCommand::class => RollupCommand::class,
+                        StatusCommand::class => StatusCommand::class,
+                        VersionCommand::class => VersionCommand::class,
+                        UpToDateCommand::class => UpToDateCommand::class,
+                        DiffCommand::class => DiffCommand::class,
                     ],
                     'delegators' => [
                         Console::class => [
@@ -113,9 +146,9 @@ class ConfigProvider
             'doctrine' => [
                 'connection' => [
                     'orm_default' => [
-                        'driver_class' => Driver::class,
-                        'params' => [
-                        ],
+//                        'driver_class' => Driver::class,
+//                        'params' => [
+//                        ],
                     ],
                 ],
                 'driver' => [
@@ -123,7 +156,6 @@ class ConfigProvider
                         'class' => SimplifiedYamlDriver::class,
                         'cache' => 'array',
                         'paths' => [
-                            'config/doctrine/' => 'App\Domain\Model',
                         ],
                     ],
                 ],
