@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Antidot\Persistence\Doctrine\Container;
 
 use Antidot\Cli\Application\Console;
-use Doctrine\Migrations\Tools\Console\Helper\ConfigurationHelper;
-use Doctrine\ORM\EntityManager;
 use Psr\Container\ContainerInterface;
-use Symfony\Component\Console\Helper\HelperSet;
 use Symfony\Component\Console\Helper\QuestionHelper;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
