@@ -1,5 +1,10 @@
 # Antidot Doctrine Integration
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/antidot-framework/doctrine/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/antidot-framework/doctrine/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/antidot-framework/doctrine/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/antidot-framework/doctrine/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/antidot-framework/doctrine/badges/build.png?b=master)](https://scrutinizer-ci.com/g/antidot-framework/doctrine/build-status/master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/antidot-framework/doctrine/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
+
 Integration library between [Doctrine ORM](https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/index.html) and 
 [Antidot Framework](https://antidotfw.io/#/framework/getting-started) using [Roave PSR-11 Doctrine factories](https://github.com/Roave/psr-container-doctrine).
 
@@ -10,7 +15,7 @@ Integration library between [Doctrine ORM](https://www.doctrine-project.org/proj
 
 ## Install
 
-Install using [composer]().
+Install using [composer](https://getcomposer.org/download/).
 
 ```bash
 composer require antidot-fw/doctrine

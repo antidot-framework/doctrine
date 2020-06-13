@@ -12,17 +12,20 @@ use RuntimeException;
 
 class EntityRepositoryFactory
 {
-    public function __invoke(ContainerInterface $container, string $model): ObjectRepository
-    {
-        $em = $container->get(EntityManagerInterface::class);
+    public function __invoke(
+        ContainerInterface $container,
+        string $model,
+        string $connectionName = ConfigProvider::DEFAULT_CONNECTION
+    ): ObjectRepository {
+        $entityManager = $container->get(sprintf(ConfigProvider::CONNECTION_ALIAS_PATTERN, $connectionName));
 
-        if (false === $em instanceof EntityManagerInterface) {
+        if (false === $entityManager instanceof EntityManagerInterface) {
             throw new RuntimeException(sprintf(
                 ConfigProvider::CONTAINER_EXCEPTION_MESSAGE_PATTER,
                 EntityManagerInterface::class
             ));
         }
 
-        return $em->getRepository($model);
+        return $entityManager->getRepository($model);
     }
 }
