@@ -45,7 +45,7 @@ class EntityRepositoryFactoryTest extends TestCase
     {
         $this->expectException(RuntimeException::class);
         $this->expectExceptionMessage(sprintf(
-            ConfigProvider::CONTAINER_EXCEPTION_MESSAGE_PATTER,
+            ConfigProvider::CONTAINER_EXCEPTION_MESSAGE_PATTERN,
             EntityManagerInterface::class
         ));
         $this->factory->__invoke($this->container, self::ENTITY_CLASS);

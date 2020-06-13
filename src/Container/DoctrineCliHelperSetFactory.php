@@ -21,7 +21,7 @@ class DoctrineCliHelperSetFactory
 
         if (false === $entityManager instanceof EntityManagerInterface) {
             throw new RuntimeException(sprintf(
-                ConfigProvider::CONTAINER_EXCEPTION_MESSAGE_PATTER,
+                ConfigProvider::CONTAINER_EXCEPTION_MESSAGE_PATTERN,
                 EntityManagerInterface::class
             ));
         }
