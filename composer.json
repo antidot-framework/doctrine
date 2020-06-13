@@ -14,9 +14,8 @@
     "require": {
         "php": "^7.4.3",
         "antidot-fw/cli": "^1.0.0",
-        "dasprid/container-interop-doctrine": "^1.1.0",
-        "doctrine/migrations": "^2.2",
-        "psr/container": "^1.0.0"
+        "psr/container": "^1.0.0",
+        "roave/psr-container-doctrine": "^2.2"
     },
     "require-dev": {
         "doctrine/migrations": "^2.0",

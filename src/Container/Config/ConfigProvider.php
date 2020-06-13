@@ -131,9 +131,6 @@ class ConfigProvider
             'doctrine' => [
                 'connection' => [
                     'orm_default' => [
-//                        'driver_class' => Driver::class,
-//                        'params' => [
-//                        ],
                     ],
                 ],
                 'driver' => [
