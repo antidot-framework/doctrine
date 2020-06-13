@@ -1,5 +1,6 @@
 # Antidot Doctrine Integration
 
+[![Latest Version on Packagist][ico-version]][link-packagist]
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/antidot-framework/doctrine/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/antidot-framework/doctrine/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/antidot-framework/doctrine/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/antidot-framework/doctrine/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/antidot-framework/doctrine/badges/build.png?b=master)](https://scrutinizer-ci.com/g/antidot-framework/doctrine/build-status/master)
@@ -42,4 +43,7 @@ parameters:
           config/doctrine: App\Domain\Model
 ```
 
+
+[ico-version]: https://img.shields.io/packagist/v/antidot-fw/doctrine.svg?style=flat-square
+[link-packagist]: https://packagist.org/packages/antidot-fw/doctrine
 
