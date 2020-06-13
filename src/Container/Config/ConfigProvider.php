@@ -49,14 +49,17 @@ class ConfigProvider
     public function __invoke(): array
     {
         return [
-            'dependencies' => [
-                'factories' => [
-                    'doctrine.entity_manager.orm_default' => EntityManagerFactory::class,
-                    'doctrine.connection.orm_default' => [ConnectionFactory::class, 'orm_default'],
-                ],
-                'services' => [
-                    EntityManagerInterface::class => 'doctrine.entity_manager.orm_default',
-                    Connection::class => 'doctrine.connection.orm_default',
+            'factories' => [
+                'doctrine.entity_manager.orm_default' => EntityManagerFactory::class,
+                'doctrine.connection.orm_default' => [ConnectionFactory::class, 'orm_default'],
+            ],
+            'services' => [
+                EntityManagerInterface::class => 'doctrine.entity_manager.orm_default',
+                Connection::class => 'doctrine.connection.orm_default',
+            ],
+            'delegators' => [
+                Console::class => [
+                    AntidotCliDoctrineDelegatorFactory::class
                 ],
             ],
             'console' => [
@@ -125,11 +128,6 @@ class ConfigProvider
                     VersionCommand::class => VersionCommand::class,
                     UpToDateCommand::class => UpToDateCommand::class,
                     DiffCommand::class => DiffCommand::class,
-                ],
-                'delegators' => [
-                    Console::class => [
-                        AntidotCliDoctrineDelegatorFactory::class
-                    ]
                 ],
             ],
             'doctrine' => [
