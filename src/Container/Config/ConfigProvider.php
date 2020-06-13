@@ -44,7 +44,7 @@ class ConfigProvider
 {
     public const CONNECTION_ALIAS_PATTERN = 'doctrine.entity_manager.%s';
     public const DEFAULT_CONNECTION = 'orm_default';
-    public const CONTAINER_EXCEPTION_MESSAGE_PATTER = 'The `%s` class must be configured in the DI container.';
+    public const CONTAINER_EXCEPTION_MESSAGE_PATTERN = 'The `%s` class must be configured in the DI container.';
 
     public function __invoke(): array
     {
