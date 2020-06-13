@@ -3,6 +3,11 @@
 Integration library between [Doctrine ORM](https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/index.html) and 
 [Antidot Framework](https://antidotfw.io/#/framework/getting-started) using [Roave PSR-11 Doctrine factories](https://github.com/Roave/psr-container-doctrine).
 
+## Requirements
+
+* PHP >= 7.2.13 for 0.0.x
+* PHP >= 7.4.0 for current
+
 ## Install
 
 Install using [composer]().
