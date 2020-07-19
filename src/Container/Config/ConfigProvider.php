@@ -46,6 +46,9 @@ class ConfigProvider
     public const DEFAULT_CONNECTION = 'orm_default';
     public const CONTAINER_EXCEPTION_MESSAGE_PATTERN = 'The `%s` class must be configured in the DI container.';
 
+    /**
+     * @return array<mixed>
+     */
     public function __invoke(): array
     {
         return [
