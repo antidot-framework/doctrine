@@ -1,17 +1,32 @@
 # Changelog
 
+## [1.0.1](https://github.com/antidot-framework/doctrine/tree/HEAD)
+
+[Full Changelog](https://github.com/antidot-framework/doctrine/compare/1.0.0...HEAD)
+
+**Implemented enhancements:**
+
+- Allow loading different entity managers in AntidotCliDoctrineDelegatorFactory [\#4](https://github.com/antidot-framework/doctrine/issues/4)
+- Allow loading different entity managers in EntityRepositoryFactory [\#3](https://github.com/antidot-framework/doctrine/issues/3)
+
+**Merged pull requests:**
+
+- Update phpunit/phpunit requirement from ^8.0 to ^8.0 || ^9.0 [\#9](https://github.com/antidot-framework/doctrine/pull/9) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update symfony/var-dumper requirement from ^4.2 to ^4.2 || ^5.0 [\#8](https://github.com/antidot-framework/doctrine/pull/8) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update phpro/grumphp requirement from ^0.15.0 to ^0.15.0 || ^0.19.0 [\#7](https://github.com/antidot-framework/doctrine/pull/7) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update phpstan/phpstan requirement from ^0.11.5 to ^0.11.5 || ^0.12.0 [\#6](https://github.com/antidot-framework/doctrine/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [1.0.0](https://github.com/antidot-framework/doctrine/tree/1.0.0) (2020-06-13)
 
 [Full Changelog](https://github.com/antidot-framework/doctrine/compare/0.0.1...1.0.0)
 
 **Implemented enhancements:**
 
-- Allow loading different entity managers in EntityRepositoryFactory [\#3](https://github.com/antidot-framework/doctrine/issues/3)
 - dasprid/container-interop-doctrine deprecated [\#1](https://github.com/antidot-framework/doctrine/issues/1)
+- Issue: \#3: Allow loading different entity managers in EntityRepositoryFactory [\#5](https://github.com/antidot-framework/doctrine/pull/5) ([kpicaza](https://github.com/kpicaza))
 
 **Merged pull requests:**
 
-- Issue: \#3: Allow loading different entity managers in EntityRepositoryFactory [\#5](https://github.com/antidot-framework/doctrine/pull/5) ([kpicaza](https://github.com/kpicaza))
 - Issue \#1: update php and remove deprecated commands [\#2](https://github.com/antidot-framework/doctrine/pull/2) ([kpicaza](https://github.com/kpicaza))
 
 ## [0.0.1](https://github.com/antidot-framework/doctrine/tree/0.0.1) (2020-06-13)
