@@ -27,7 +27,7 @@ class AntidotCliDoctrineDelegatorFactoryTest extends TestCase
     /** @var EntityManagerInterface|\PHPUnit\Framework\MockObject\MockObject */
     private $entityManager;
 
-    public function setUp(): void
+    protected function setUp(): void
     {
         $this->servicename = sprintf(
             ConfigProvider::CONNECTION_ALIAS_PATTERN,
