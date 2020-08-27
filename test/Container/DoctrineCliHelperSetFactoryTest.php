@@ -26,7 +26,7 @@ class DoctrineCliHelperSetFactoryTest extends TestCase
     private string $servicename;
     private string $customServicename;
 
-    public function setUp(): void
+    protected function setUp(): void
     {
         $this->servicename = sprintf(
             ConfigProvider::CONNECTION_ALIAS_PATTERN,
