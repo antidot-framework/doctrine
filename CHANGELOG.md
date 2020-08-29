@@ -1,8 +1,18 @@
 # Changelog
 
-## [1.0.1](https://github.com/antidot-framework/doctrine/tree/HEAD)
+## [1.0.2](https://github.com/antidot-framework/doctrine/tree/1.0.2) (2020-08-29)
 
-[Full Changelog](https://github.com/antidot-framework/doctrine/compare/1.0.0...HEAD)
+[Full Changelog](https://github.com/antidot-framework/doctrine/compare/1.0.1...1.0.2)
+
+**Merged pull requests:**
+
+- update phpunit configuration format [\#14](https://github.com/antidot-framework/doctrine/pull/14) ([kpicaza](https://github.com/kpicaza))
+- Update phpro/grumphp requirement from ^0.15.0 || ^0.19.0 to ^0.15.0 || ^0.19.0 || ^0.21.0 [\#12](https://github.com/antidot-framework/doctrine/pull/12) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Improve PHPUnit fixtures [\#11](https://github.com/antidot-framework/doctrine/pull/11) ([peter279k](https://github.com/peter279k))
+
+## [1.0.1](https://github.com/antidot-framework/doctrine/tree/1.0.1) (2020-07-19)
+
+[Full Changelog](https://github.com/antidot-framework/doctrine/compare/1.0.0...1.0.1)
 
 **Implemented enhancements:**
 
