@@ -11,8 +11,7 @@ Integration library between [Doctrine ORM](https://www.doctrine-project.org/proj
 
 ## Requirements
 
-* PHP >= 7.2.13 for 0.0.x
-* PHP >= 7.4.0 for current
+* PHP ^7.4|^8.0 for current
 
 ## Install
 

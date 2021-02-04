@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.3](https://github.com/antidot-framework/doctrine/tree/1.0.3)
+
+[Full Changelog](https://github.com/antidot-framework/doctrine/compare/1.0.2...1.0.3)
+
+**Merged pull requests:**
+
+- update readme [\#19](https://github.com/antidot-framework/doctrine/pull/19) ([kpicaza](https://github.com/kpicaza))
+- GitHub actions [\#18](https://github.com/antidot-framework/doctrine/pull/18) ([kpicaza](https://github.com/kpicaza))
+- update composer to support php8 [\#17](https://github.com/antidot-framework/doctrine/pull/17) ([kpicaza](https://github.com/kpicaza))
+- Update phpro/grumphp requirement from ~0.17 to ~0.17 || ~1.0 [\#16](https://github.com/antidot-framework/doctrine/pull/16) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update phpro/grumphp requirement from ^0.15.0 || ^0.19.0 || ^0.21.0 to ~0.17 [\#15](https://github.com/antidot-framework/doctrine/pull/15) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [1.0.2](https://github.com/antidot-framework/doctrine/tree/1.0.2) (2020-08-29)
 
 [Full Changelog](https://github.com/antidot-framework/doctrine/compare/1.0.1...1.0.2)
