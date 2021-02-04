@@ -12,6 +12,12 @@ use RuntimeException;
 
 class EntityRepositoryFactory
 {
+    /**
+     * @param ContainerInterface $container
+     * @param class-string $model
+     * @param string $connectionName
+     * @return ObjectRepository
+     */
     public function __invoke(
         ContainerInterface $container,
         string $model,
