@@ -11,15 +11,21 @@
             "name": "kpicaza"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/antidot-framework/psr-container-doctrine"
+        }
+    ],
     "require": {
-        "php": "^7.4.3",
+        "php": "^7.4|^8.0",
         "antidot-fw/cli": "^1.0.0",
         "psr/container": "^1.0.0",
-        "roave/psr-container-doctrine": "^2.2"
+        "roave/psr-container-doctrine": "^2.2|@dev"
     },
     "require-dev": {
         "doctrine/migrations": "^2.0",
-        "phpro/grumphp": "~0.17 || ~1.0",
+        "phpro/grumphp": "^1.0",
         "phpstan/phpstan": "^0.11.5 || ^0.12.0",
         "phpunit/phpunit": "^8.0 || ^9.0",
         "squizlabs/php_codesniffer": "^3.4",
