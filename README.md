@@ -3,8 +3,8 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/antidot-framework/doctrine/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/antidot-framework/doctrine/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/antidot-framework/doctrine/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/antidot-framework/doctrine/?branch=master)
+[![type-coverage](https://shepherd.dev/github/antidot-framework/doctrine/coverage.svg)](https://shepherd.dev/github/antidot-framework/doctrine)
 [![Build Status](https://scrutinizer-ci.com/g/antidot-framework/doctrine/badges/build.png?b=master)](https://scrutinizer-ci.com/g/antidot-framework/doctrine/build-status/master)
-[![Code Intelligence Status](https://scrutinizer-ci.com/g/antidot-framework/doctrine/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 
 Integration library between [Doctrine ORM](https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/index.html) and 
 [Antidot Framework](https://antidotfw.io/#/framework/getting-started) using [Roave PSR-11 Doctrine factories](https://github.com/Roave/psr-container-doctrine).
@@ -22,7 +22,7 @@ Install using [composer](https://getcomposer.org/download/).
 composer require antidot-fw/doctrine
 ```
 
-## Default Config fot Antidot Framework Starter
+## Default Config in Antidot Framework Starter
 
 Doctrine integration requires a minimum config to work, by default it is configured with [the `SimplifiedYamlDriver`](https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/reference/yaml-mapping.html#simplified-yaml-driver). 
 When you need more complex or more custom config you can implement it without ani issues following [doctrine docs](https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/index.html).
